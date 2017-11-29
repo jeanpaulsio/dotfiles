@@ -24,6 +24,22 @@ let g:NERDTreeWinPos = 'left'
 let mapleader = ","
 nmap <leader>ne :NERDTree<cr>
 
+" show hidden dot files by default
+let NERDTreeShowHidden=1
+
+" ignore ds_store
+let NERDTreeIgnore=['\.DS_Store$']
+
+" syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 " 80 column layout
 if exists('+colorcolumn')
   set colorcolumn=80

@@ -8,9 +8,20 @@ https://github.com/amix/vimrc
 
 ## Custom Plugins
 
-* indentLine
-* vim-javascript
-* vim-unimpaired `[ + space`
+__vim plug__
+https://github.com/junegunn/vim-plug
+
+__indentLine__
+https://github.com/Yggdroot/indentLine
+
+__syntastic__
+https://github.com/vim-syntastic/syntastic
+
+__vim-javascript__
+https://github.com/pangloss/vim-javascript
+
+__vim-unimpaired__
+https://github.com/tpope/vim-unimpaired
 
 # iTerm Settings
 
