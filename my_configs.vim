@@ -20,6 +20,10 @@ let g:prettier#config#bracket_spacing = 'true'
 " nerd tree side bar position
 let g:NERDTreeWinPos = 'left'
 
+" nerd tree toggle, ,ne in normal mode
+let mapleader = ","
+nmap <leader>ne :NERDTree<cr>
+
 " 80 column layout
 if exists('+colorcolumn')
   set colorcolumn=80
