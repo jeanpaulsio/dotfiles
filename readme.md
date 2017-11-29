@@ -23,3 +23,8 @@ Load Preset
 Natural Text Editing
 ```
 
+Open New Tab with same working directory
+
+```
+Preferences > Profiles > Working Directory > Reuse previous sessions
+```
