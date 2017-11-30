@@ -6,6 +6,9 @@ set guifont=IBM\ Plex\ Mono:h16
 syntax on
 color dracula
 
+" map the keys 'jk' to the Escape key to improve efficiency.                                                                                             
+imap jj <Esc>
+
 let g:jsx_ext_required = 0
 
 " print semicolons
@@ -34,6 +37,7 @@ let NERDTreeIgnore=['\.DS_Store$']
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+let g:syntastic_javascript_checkers=['eslint']
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
