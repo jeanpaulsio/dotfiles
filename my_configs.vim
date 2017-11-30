@@ -6,7 +6,16 @@ set guifont=IBM\ Plex\ Mono:h16
 syntax on
 color dracula
 
-" map the keys 'jk' to the Escape key to improve efficiency.                                                                                             
+" navigation stuff, i.e. ctrl + j
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+set splitbelow
+set splitright
+
+" map the keys 'jj' to the Escape key to improve efficiency.                                                                                             
 imap jj <Esc>
 
 let g:jsx_ext_required = 0
