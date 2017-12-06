@@ -23,6 +23,9 @@ https://github.com/pangloss/vim-javascript
 __vim-unimpaired__
 https://github.com/tpope/vim-unimpaired
 
+__vim-rails__
+https://github.com/tpope/vim-rails
+
 # iTerm Settings
 
 Option + Arrow to navigate
