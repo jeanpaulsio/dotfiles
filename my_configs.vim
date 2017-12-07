@@ -53,6 +53,10 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+let g:syntastic_scss_sass_quiet_messages = {
+    \ "regex": 'File to import not found or unreadable', }
+
+
 " 80 column layout
 if exists('+colorcolumn')
   set colorcolumn=80
