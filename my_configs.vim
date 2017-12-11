@@ -2,6 +2,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set guifont=IBM\ Plex\ Mono:h16
+set number
 
 syntax on
 color dracula
@@ -46,15 +47,12 @@ let NERDTreeIgnore=['\.DS_Store$']
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-let g:syntastic_javascript_checkers=['eslint']
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
-let g:syntastic_scss_sass_quiet_messages = {
-    \ "regex": 'File to import not found or unreadable', }
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exe = 'npm run lint --'
 
 
 " 80 column layout
