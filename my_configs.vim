@@ -44,6 +44,9 @@ let NERDTreeShowHidden=1
 " ignore ds_store
 let NERDTreeIgnore=['\.DS_Store$']
 
+" unfold all lines
+set foldlevel=99
+
 " 80 column layout
 if exists('+colorcolumn')
   set colorcolumn=80
