@@ -26,6 +26,9 @@ https://github.com/tpope/vim-unimpaired
 __vim-rails__
 https://github.com/tpope/vim-rails
 
+__ale__
+https://github.com/w0rp/ale
+
 # iTerm Settings
 
 Option + Arrow to navigate
