@@ -48,6 +48,9 @@ let NERDTreeIgnore=['\.DS_Store$']
 set foldlevel=99
 set nofoldenable
 
+" gitgutter enabled
+let g:gitgutter_enabled = 1
+
 " 80 column layout
 if exists('+colorcolumn')
   set colorcolumn=80
