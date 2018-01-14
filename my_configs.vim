@@ -17,8 +17,9 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
-" map the keys 'jj' to the Escape key to improve efficiency.                                                                                             
-imap jj <Esc>
+" map the keys 'jk' to the Escape key to improve efficiency.                                                                                             
+imap jk <Esc>
+imap kj <Esc>
 
 let g:jsx_ext_required = 0
 
