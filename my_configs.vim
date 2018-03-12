@@ -6,7 +6,6 @@ set guifont=IBM\ Plex\ Mono:h16
 set number
 
 syntax on
-color dracula
 
 " navigation stuff, i.e. ctrl + j
 nnoremap <C-J> <C-W><C-J>
@@ -31,6 +30,8 @@ let g:prettier#config#single_quote = 'false'
 
 " print spaces between brackets
 let g:prettier#config#bracket_spacing = 'true'
+
+let g:prettier#config#trailing_comma = 'none'
 
 " nerd tree side bar position
 let g:NERDTreeWinPos = 'left'
