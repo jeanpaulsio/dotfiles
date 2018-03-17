@@ -29,19 +29,14 @@ https://github.com/tpope/vim-rails
 __ale__
 https://github.com/w0rp/ale
 
-# iTerm Settings
+__vim-elixir__
+https://github.com/elixir-editors/vim-elixir
 
-Option + Arrow to navigate
-Option + Back to delete words
+---
 
-```
-Preferences > Profiles > Keys
-Load Preset
-Natural Text Editing
-```
+__Themes__
 
-Open New Tab with same working directory
+Dracula everything:
+https://draculatheme.com/
 
-```
-Preferences > Profiles > Working Directory > Reuse previous sessions
-```
+

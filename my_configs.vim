@@ -6,6 +6,7 @@ set guifont=IBM\ Plex\ Mono:h16
 set number
 
 syntax on
+color dracula
 
 " navigation stuff, i.e. ctrl + j
 nnoremap <C-J> <C-W><C-J>
