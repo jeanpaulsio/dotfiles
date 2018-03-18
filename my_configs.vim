@@ -21,6 +21,13 @@ set splitright
 imap jk <Esc>
 imap kj <Esc>
 
+" Bracket / Quote matching
+inoremap ( ()<Esc>i
+inoremap [ []<Esc>i
+inoremap { {}<Esc>i
+inoremap " ""<Esc>i
+inoremap ' ''<Esc>i
+
 let g:jsx_ext_required = 0
 
 " print semicolons
