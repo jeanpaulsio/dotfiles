@@ -46,16 +46,3 @@ nmap <leader>ne :NERDTree<cr>
 let g:NERDTreeWinPos = 'left'
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.DS_Store$']
-
-" Vim Plug
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-call plug#begin('~/.vim/plugged')
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-Plug 'pangloss/vim-javascript'
-Plug 'maxmellon/vim-jsx-pretty'
-call plug#end()
