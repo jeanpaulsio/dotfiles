@@ -32,6 +32,9 @@ https://github.com/w0rp/ale
 __vim-elixir__
 https://github.com/elixir-editors/vim-elixir
 
+__auto pairs__
+https://github.com/jiangmiao/auto-pairs
+
 ---
 
 __Themes__

@@ -8,6 +8,8 @@ set number
 syntax on
 color dracula
 
+
+
 " navigation stuff, i.e. ctrl + j
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -56,6 +58,7 @@ let NERDTreeIgnore=['\.DS_Store$']
 
 " unfold all lines
 set foldlevel=99
+set foldlevelstart=10
 set nofoldenable
 
 " gitgutter enabled
