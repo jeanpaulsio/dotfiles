@@ -46,3 +46,6 @@ nmap <leader>ne :NERDTree<cr>
 let g:NERDTreeWinPos = 'left'
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.DS_Store$']
+
+" Vim Multiple Cursors
+let g:multi_cursor_next_key="\<C-d>"
