@@ -6,9 +6,7 @@
 
 Base:
 
-```
-https://github.com/amix/vimrc
-```
+[Ultimate Vim Config](https://github.com/amix/vimrc)
 
 Vim Plugins:
 
@@ -20,9 +18,6 @@ https://github.com/jiangmiao/auto-pairs
 
 __indentLine__
 https://github.com/Yggdroot/indentLine
-
-__syntastic__
-https://github.com/vim-syntastic/syntastic
 
 __vim-javascript__
 https://github.com/pangloss/vim-javascript
