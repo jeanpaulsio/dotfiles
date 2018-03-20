@@ -65,4 +65,14 @@ System Preferences > Keyboard > Key Repeat         = Fast
 System Preferences > Keyboard > Delay Until Repeat = Short
 ```
 
+## Symlink Config
 
+```
+git pull
+```
+
+```
+ln -s ~/Desktop/code/dotfiles/zsh/.zshrc ~/.zshrc
+ln -s ~/Desktop/code/dotfiles/vim/my_configs.vim ~/.vim_runtime/my_configs.vim
+ln -s ~/Desktop/code/dotfiles/tmux/.tmux.conf ~/.tmux.conf
+```
