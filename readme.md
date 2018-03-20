@@ -1,5 +1,7 @@
 # Dotfiles
 
+---
+
 ## Vim
 
 Base:
@@ -46,5 +48,21 @@ https://github.com/elixir-editors/vim-elixir
 
 Dracula everything:
 https://draculatheme.com/
+
+---
+
+## Other
+
+Easily name `HostName`
+
+```
+# sudo scutil --set HostName westeros
+```
+Change Keyspeed to make navigating Vim more chill
+
+```
+System Preferences > Keyboard > Key Repeat         = Fast
+System Preferences > Keyboard > Delay Until Repeat = Short
+```
 
 
