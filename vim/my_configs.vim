@@ -31,6 +31,10 @@ imap jk <Esc>
 imap kj <Esc>
 let mapleader = ","
 
+" move line down/up
+noremap J ddkkp
+noremap K ddp
+
 " Ale
 let g:ale_emit_conflict_warnings = 0
 
