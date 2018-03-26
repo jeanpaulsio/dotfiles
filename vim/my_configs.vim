@@ -9,6 +9,7 @@ set shiftwidth=2
 set expandtab
 
 " UI Layout
+set cursorline
 set number
 set nofoldenable
 set foldlevelstart=99
