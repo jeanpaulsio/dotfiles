@@ -21,6 +21,12 @@ else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
 
+" Resizes Panes
+nmap 7 :res -2<CR>
+nmap 8 :res +2<CR>
+nmap 9 :vertical res -2<CR>
+nmap 0 :vertical res +2<CR>
+
 " Navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
