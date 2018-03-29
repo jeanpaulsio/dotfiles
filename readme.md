@@ -16,6 +16,9 @@ https://github.com/w0rp/ale
 __auto pairs__
 https://github.com/jiangmiao/auto-pairs
 
+__diminactive__
+https://github.com/blueyed/vim-diminactive
+
 __indentLine__
 https://github.com/Yggdroot/indentLine
 
