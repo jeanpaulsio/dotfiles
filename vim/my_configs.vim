@@ -1,7 +1,7 @@
 " Fonts and Colors
 set guifont=IBM\ Plex\ Mono:h16
 syntax on
-color dracula
+colorscheme gruvbox
 
 " Spaces and Tabs
 set tabstop=2

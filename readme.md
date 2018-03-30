@@ -47,6 +47,9 @@ https://github.com/elixir-editors/vim-elixir
 Dracula everything:
 https://draculatheme.com/
 
+gruvbox:
+https://github.com/morhetz/gruvbox
+
 ---
 
 ## Other
