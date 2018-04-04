@@ -55,7 +55,6 @@ let g:prettier#config#bracket_spacing = 'true'
 let g:prettier#config#trailing_comma = 'none'
 
 " NERDTree
-nmap <leader>ne :NERDTree<cr>
 let g:NERDTreeWinPos = 'left'
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.DS_Store$']
