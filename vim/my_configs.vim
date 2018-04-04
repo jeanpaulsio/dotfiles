@@ -64,3 +64,4 @@ let g:multi_cursor_next_key="\<C-d>"
 
 " Vim Go stuff
 let g:go_version_warning = 0
+
