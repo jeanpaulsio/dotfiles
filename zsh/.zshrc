@@ -49,3 +49,6 @@ alias gf='git reflog'
 # Other Aliases
 alias code='cd ~/Desktop/code'
 
+# Ack Fix
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
