@@ -1,8 +1,10 @@
 " Fonts and Colors
-set guifont=IBM\ Plex\ Mono:h16
+set guifont=Operator\ Mono\ Book:h14
 syntax on
 color dracula
 hi ColorColumn ctermbg=234 guibg=#191A21
+highlight Comment gui=italic
+highlight Comment cterm=italic
 
 " Spaces and Tabs
 set tabstop=2
@@ -11,7 +13,7 @@ set expandtab
 
 " UI Layout
 set cursorline
-set cursorcolumn
+" set cursorcolumn
 set number
 set nofoldenable
 set foldlevelstart=99
@@ -64,4 +66,3 @@ let g:multi_cursor_next_key="\<C-d>"
 
 " Vim Go stuff
 let g:go_version_warning = 0
-
