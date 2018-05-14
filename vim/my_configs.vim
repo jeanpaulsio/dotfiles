@@ -58,8 +58,12 @@ let g:prettier#config#trailing_comma = 'none'
 
 " NERDTree
 let g:NERDTreeWinPos = 'left'
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.DS_Store$']
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Vim Multiple Cursors
 let g:multi_cursor_next_key="\<C-d>"
