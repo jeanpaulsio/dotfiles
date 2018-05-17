@@ -42,6 +42,12 @@ https://github.com/elixir-editors/vim-elixir
 
 ---
 
+## zsh
+
+https://github.com/denysdovhan/spaceship-prompt
+
+---
+
 ## Themes
 
 Dracula everything:

@@ -4,7 +4,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Theme
-ZSH_THEME="suvash"
+ZSH_THEME="spaceship"
 
 # Plugins
 plugins=(git docker rails ruby tmux yarn)
@@ -45,6 +45,7 @@ alias gpu='git pull'
 alias gcl='git clone'
 alias gta='git tag -a -m'
 alias gf='git reflog'
+alias :e='mvim -v'
 
 # Other Aliases
 alias code='cd ~/Desktop/code'
