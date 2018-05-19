@@ -13,7 +13,7 @@ set expandtab
 
 " UI Layout
 set cursorline
-" set cursorcolumn
+set cursorcolumn
 set number
 set nofoldenable
 set foldlevelstart=99
