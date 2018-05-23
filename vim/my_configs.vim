@@ -37,6 +37,16 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" Tab Navigation
+nnoremap th  :tabfirst<CR>
+nnoremap tk  :tabnext<CR>
+nnoremap tj  :tabprev<CR>
+nnoremap tl  :tablast<CR>
+nnoremap tt  :tabedit<Space>
+nnoremap tn  :tabnext<Space>
+nnoremap tm  :tabm<Space>
+nnoremap td  :tabclose<CR>
+
 " Shortcuts
 imap jk <Esc>
 imap kj <Esc>
@@ -70,3 +80,4 @@ let g:multi_cursor_next_key="\<C-d>"
 
 " Vim Go stuff
 let g:go_version_warning = 0
+
