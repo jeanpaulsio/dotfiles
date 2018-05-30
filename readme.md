@@ -46,6 +46,10 @@ https://github.com/elixir-editors/vim-elixir
 
 https://github.com/denysdovhan/spaceship-prompt
 
+__iTerm__
+
+Preferences > Text > Non-ASCII Font > 12pt Meslo LG S Regular for Powerline
+
 ---
 
 ## Themes
