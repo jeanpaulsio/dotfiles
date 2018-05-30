@@ -2,6 +2,14 @@
 
 ---
 
+Make sure to install ack with brew
+
+```
+$ brew install ack
+```
+
+---
+
 ## Vim
 
 Base:
@@ -48,7 +56,10 @@ https://github.com/denysdovhan/spaceship-prompt
 
 __iTerm__
 
-Preferences > Text > Non-ASCII Font > 12pt Meslo LG S Regular for Powerline
+Preferences → Text → Non-ASCII Font → 12pt Meslo LG S Regular for Powerline
+
+(Natural Text Editing)
+Preferences → Profiles → Keys → Keyboard Behavior → Load Preset → Natural Text Editing
 
 ---
 
