@@ -4,16 +4,22 @@
 
 ## Vim
 
-Vim Plugins:
+Vim Plugins
+
+__ack__
+https://github.com/mileszs/ack
+
+__ctrlp__
+https://github.com/ctrlpvim/ctrlp
 
 __ale__
 https://github.com/w0rp/ale
 
+__vim git gutter__
+https://github.com/airblade/vim-gitgutter
+
 __auto pairs__
 https://github.com/jiangmiao/auto-pairs
-
-__diminactive__
-https://github.com/blueyed/vim-diminactive
 
 __indentLine__
 https://github.com/Yggdroot/indentLine
@@ -77,4 +83,5 @@ git pull
 ```
 ln -s ~/Desktop/code/dotfiles/zsh/.zshrc ~/.zshrc
 ln -s ~/Desktop/code/dotfiles/tmux/.tmux.conf ~/.tmux.conf
+ln -s ~/Desktop/code/dotfiles/vim/.vimrc ~/.vimrc
 ```

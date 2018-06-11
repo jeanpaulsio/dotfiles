@@ -42,8 +42,8 @@ set lazyredraw
 set scrolljump=8
 
 " Shortcuts
-c>
-c>
+imap jk <Esc>
+imap kj <Esc>
 let mapleader = ","
 
 " move line down/up
@@ -71,3 +71,16 @@ nnoremap tt  :tabedit<Space>
 nnoremap tn  :tabnext<Space>
 nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
+
+" Pathogen
+execute pathogen#infect()
+
+" Ale
+let g:ale_emit_conflict_warnings = 0
+
+" Prettier
+let g:jsx_ext_required = 0
+let g:prettier#config#semi = 'true'
+let g:prettier#config#single_quote = 'false'
+let g:prettier#config#bracket_spacing = 'true'
+let g:prettier#config#trailing_comma = 'none'
