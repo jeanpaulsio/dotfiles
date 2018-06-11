@@ -14,40 +14,40 @@ $ brew install ack
 
 Vim Plugins
 
-__ack__
-https://github.com/mileszs/ack
+**ack**
+https://github.com/mileszs/ack.vim
 
-__ctrlp__
-https://github.com/ctrlpvim/ctrlp
+**ctrlp**
+https://github.com/ctrlpvim/ctrlp.vim
 
-__ale__
+**ale**
 https://github.com/w0rp/ale
 
-__vim git gutter__
+**vim git gutter**
 https://github.com/airblade/vim-gitgutter
 
-__auto pairs__
+**auto pairs**
 https://github.com/jiangmiao/auto-pairs
 
-__indentLine__
+**indentLine**
 https://github.com/Yggdroot/indentLine
 
-__vim-javascript__
+**vim-javascript**
 https://github.com/pangloss/vim-javascript
 
-__vim-jsx__
+**vim-jsx**
 https://github.com/mxw/vim-jsx
 
-__vim-prettier__
+**vim-prettier**
 https://github.com/prettier/vim-prettier
 
-__vim-unimpaired__
+**vim-unimpaired**
 https://github.com/tpope/vim-unimpaired
 
-__vim-rails__
+**vim-rails**
 https://github.com/tpope/vim-rails
 
-__vim-elixir__
+**vim-elixir**
 https://github.com/elixir-editors/vim-elixir
 
 ---
@@ -56,7 +56,7 @@ https://github.com/elixir-editors/vim-elixir
 
 https://github.com/denysdovhan/spaceship-prompt
 
-__iTerm__
+**iTerm**
 
 Preferences → Text → Non-ASCII Font → 12pt Meslo LG S Regular for Powerline
 
@@ -78,6 +78,7 @@ Easily name `HostName`
 ```
 # sudo scutil --set HostName westeros
 ```
+
 Change Keyspeed to make navigating Vim more chill
 
 ```

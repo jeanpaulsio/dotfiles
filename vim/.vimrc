@@ -16,7 +16,9 @@ if has("win32unix")
 endif
 
 syntax on
-color dracula
+let g:dracula_italic = 0
+colorscheme dracula
+highlight Normal ctermbg=None
 
 if exists('+colorcolumn')
   set colorcolumn=80
@@ -83,4 +85,3 @@ let g:jsx_ext_required = 0
 let g:prettier#config#semi = 'true'
 let g:prettier#config#single_quote = 'false'
 let g:prettier#config#bracket_spacing = 'true'
-let g:prettier#config#trailing_comma = 'none'
