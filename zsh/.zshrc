@@ -52,3 +52,10 @@ alias code='cd ~/Desktop/code'
 # Ack Fix
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+
+# Exercism
+if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
+  . ~/.config/exercism/exercism_completion.zsh
+fi
+
+ssh-add -K ~/.ssh/id_rsa
