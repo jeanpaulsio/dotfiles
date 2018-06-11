@@ -4,10 +4,6 @@
 
 ## Vim
 
-Base:
-
-[Ultimate Vim Config](https://github.com/amix/vimrc)
-
 Vim Plugins:
 
 __ale__
@@ -54,11 +50,7 @@ Preferences > Text > Non-ASCII Font > 12pt Meslo LG S Regular for Powerline
 
 ## Themes
 
-Dracula everything:
 https://draculatheme.com/
-
-gruvbox:
-https://github.com/morhetz/gruvbox
 
 ---
 
@@ -84,6 +76,5 @@ git pull
 
 ```
 ln -s ~/Desktop/code/dotfiles/zsh/.zshrc ~/.zshrc
-ln -s ~/Desktop/code/dotfiles/vim/my_configs.vim ~/.vim_runtime/my_configs.vim
 ln -s ~/Desktop/code/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ```
