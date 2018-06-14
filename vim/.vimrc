@@ -33,6 +33,9 @@ set expandtab
 set cursorline
 set number
 set nofoldenable
+set list
+set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
+set hlsearch
 
 " Speed Optimizations
 let loaded_matchparen=1
@@ -79,6 +82,7 @@ execute pathogen#infect()
 
 " Ale
 let g:ale_emit_conflict_warnings = 0
+let g:ale_fixers = { 'javascript': ['prettier', 'eslint'], 'ruby': ['rubocop'] }
 
 " Prettier
 let g:jsx_ext_required = 0
