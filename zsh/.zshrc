@@ -48,6 +48,9 @@ alias gf='git reflog'
 
 # Other Aliases
 alias code='cd ~/Desktop/code'
+alias dotfiles='cd ~/Desktop/code/dotfiles'
+alias ol='cd ~/Desktop/code/open_listings'
+alias olm='cd ~/Desktop/code/open_listings_mobile'
 
 # Ack Fix
 export LC_CTYPE=en_US.UTF-8

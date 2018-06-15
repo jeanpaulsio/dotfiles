@@ -1,29 +1,60 @@
 # Dotfiles
 
----
+## Homebrew
+
+```
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 Make sure to install ack with brew
 
 ```
+$ brew update
 $ brew install ack
 ```
 
 ---
 
-## Setup Vim
+## iTerm
 
-This will install all of the packages into `~/.vim/bundle` and create a Symlink to use the `.vimrc` in this directory
+Download iTerm:  
+https://www.iterm2.com/downloads.html
+
+(Natural Text Editing)
+Preferences → Profiles → Keys → Keyboard Behavior → Load Preset → Natural Text Editing
+
+---
+
+## zsh
 
 ```
-$ cd ~/Desktop/code
-$ git clone https://github.com/jeanpaulsio/dotfiles.git
-$ cd dotfiles
-$ ruby setup_vim.rb
+$ brew install zsh zsh-completions
+```
+
+Inside of iTerm:
+
+Preferences → General → Command → bin/zsh --login
+Preferences → Text → Non-ASCII Font → 12pt Meslo LG S Regular for Powerline
+
+Download Spaceship:  
+https://github.com/denysdovhan/spaceship-prompt
+
+Oh My Zsh:  
+https://github.com/robbyrussell/oh-my-zsh
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 ---
 
 ## Vim
+
+Quick Installation:
+
+```
+$ ruby
+```
 
 Vim Plugins
 
@@ -80,23 +111,10 @@ https://github.com/tpope/vim-unimpaired
 
 ---
 
-## zsh
-
-https://github.com/denysdovhan/spaceship-prompt
-
-**iTerm**
-
-Preferences → Text → Non-ASCII Font → 12pt Meslo LG S Regular for Powerline
-
-(Natural Text Editing)
-Preferences → Profiles → Keys → Keyboard Behavior → Load Preset → Natural Text Editing
-
----
-
 ## Themes
 
-* https://github.com/vim-scripts/DuoTones-Dark  
-* https://github.com/atelierbram/Base2Tone-iterm2  
+- https://github.com/vim-scripts/DuoTones-Dark
+- https://github.com/atelierbram/Base2Tone-iterm2
 
 ---
 
@@ -114,6 +132,8 @@ Change Keyspeed to make navigating Vim more chill
 System Preferences > Keyboard > Key Repeat         = Fast
 System Preferences > Keyboard > Delay Until Repeat = Short
 ```
+
+---
 
 ## Symlink Config
 
