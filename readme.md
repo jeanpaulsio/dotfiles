@@ -17,20 +17,38 @@ Vim Plugins
 **ack**
 https://github.com/mileszs/ack.vim
 
-**ctrlp**
-https://github.com/ctrlpvim/ctrlp.vim
-
 **ale**
 https://github.com/w0rp/ale
-
-**vim git gutter**
-https://github.com/airblade/vim-gitgutter
 
 **auto pairs**
 https://github.com/jiangmiao/auto-pairs
 
+**ctrlp**
+https://github.com/ctrlpvim/ctrlp.vim
+
 **indentLine**
 https://github.com/Yggdroot/indentLine
+
+**vim-airline**
+https://github.com/vim-airline/vim-airline
+
+**vim-airline-themes**
+https://github.com/vim-airline/vim-airline-themes
+
+**vim-commentary**
+https://github.com/tpope/vim-commentary
+
+**vim-elixir**
+https://github.com/elixir-editors/vim-elixir
+
+**vim-endwise**
+https://github.com/tpope/vim-endwise
+
+**vim-expand-region**
+https://github.com/terryma/vim-expand-region
+
+**vim git gutter**
+https://github.com/airblade/vim-gitgutter
 
 **vim-javascript**
 https://github.com/pangloss/vim-javascript
@@ -41,14 +59,11 @@ https://github.com/mxw/vim-jsx
 **vim-prettier**
 https://github.com/prettier/vim-prettier
 
-**vim-unimpaired**
-https://github.com/tpope/vim-unimpaired
-
 **vim-rails**
 https://github.com/tpope/vim-rails
 
-**vim-elixir**
-https://github.com/elixir-editors/vim-elixir
+**vim-unimpaired**
+https://github.com/tpope/vim-unimpaired
 
 ---
 
@@ -68,6 +83,8 @@ Preferences → Profiles → Keys → Keyboard Behavior → Load Preset → Natu
 ## Themes
 
 https://draculatheme.com/
+https://github.com/vim-scripts/DuoTones-Dark
+https://github.com/atelierbram/Base2Tone-iterm2
 
 ---
 

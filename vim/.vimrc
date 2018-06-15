@@ -1,3 +1,10 @@
+syntax on
+set termguicolors
+set background=dark
+colorscheme base16-duotone-dark
+highlight Normal ctermbg=None
+
+
 " UI
 set guifont=Operator\ Mono\ Book:h14
 
@@ -15,11 +22,6 @@ if has("win32unix")
     let &t_te.="\e[0 q"
 endif
 
-syntax on
-let g:dracula_italic = 0
-colorscheme dracula
-highlight Normal ctermbg=None
-
 if exists('+colorcolumn')
   set colorcolumn=80
 else
@@ -27,22 +29,25 @@ else
 endif
 
 " Base Config
+set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
 set cursorline
+set cursorcolumn
 set number
 set nofoldenable
 set list
-set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
+set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»
 set hlsearch
+set ruler
 
 " Speed Optimizations
 let loaded_matchparen=1
 let html_no_rendering=1
 set noshowmatch
 set nocursorline
-set nocursorcolumn
+" set nocursorcolumn
 set lazyredraw
 set scrolljump=8
 
@@ -89,3 +94,6 @@ let g:jsx_ext_required = 0
 let g:prettier#config#semi = 'true'
 let g:prettier#config#single_quote = 'false'
 let g:prettier#config#bracket_spacing = 'true'
+
+" Airline
+let g:airline_theme='minimalist'
