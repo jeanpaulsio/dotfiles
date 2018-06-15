@@ -53,7 +53,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 Quick Installation:
 
 ```
-$ ruby
+$ ruby setup_vim.rb
 ```
 
 Vim Plugins
