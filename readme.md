@@ -10,6 +10,19 @@ $ brew install ack
 
 ---
 
+## Setup Vim
+
+This will install all of the packages into `~/.vim/bundle` and create a Symlink to use the `.vimrc` in this directory
+
+```
+$ cd ~/Desktop/code
+$ git clone https://github.com/jeanpaulsio/dotfiles.git
+$ cd dotfiles
+$ ruby setup_vim.rb
+```
+
+---
+
 ## Vim
 
 Vim Plugins
@@ -82,9 +95,8 @@ Preferences → Profiles → Keys → Keyboard Behavior → Load Preset → Natu
 
 ## Themes
 
-https://draculatheme.com/
-https://github.com/vim-scripts/DuoTones-Dark
-https://github.com/atelierbram/Base2Tone-iterm2
+* https://github.com/vim-scripts/DuoTones-Dark  
+* https://github.com/atelierbram/Base2Tone-iterm2  
 
 ---
 
@@ -104,10 +116,6 @@ System Preferences > Keyboard > Delay Until Repeat = Short
 ```
 
 ## Symlink Config
-
-```
-git pull
-```
 
 ```
 ln -s ~/Desktop/code/dotfiles/zsh/.zshrc ~/.zshrc

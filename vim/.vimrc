@@ -1,5 +1,4 @@
 syntax on
-set termguicolors
 set background=dark
 colorscheme base16-duotone-dark
 highlight Normal ctermbg=None
@@ -46,7 +45,7 @@ set ruler
 let loaded_matchparen=1
 let html_no_rendering=1
 set noshowmatch
-set nocursorline
+" set nocursorline
 " set nocursorcolumn
 set lazyredraw
 set scrolljump=8
