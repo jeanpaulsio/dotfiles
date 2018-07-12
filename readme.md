@@ -109,6 +109,9 @@ https://github.com/tpope/vim-rails
 **vim-unimpaired**
 https://github.com/tpope/vim-unimpaired
 
+**nerdtree**
+https://github.com/scrooloose/nerdtree
+
 ---
 
 ## Themes
