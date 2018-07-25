@@ -1,11 +1,15 @@
 syntax on
-set background=dark
-colorscheme base16-duotone-dark
-highlight Normal ctermbg=None
 
+let g:dracula_italic = 0
+colorscheme dracula
+set background=dark
+highlight Normal ctermbg=None
 
 " UI
 set guifont=Operator\ Mono\ Book:h14
+
+" Removes scrollbars
+set guioptions=
 
 " use 256 colors in terminal
 if !has("gui_running")
@@ -96,3 +100,9 @@ let g:prettier#config#bracket_spacing = 'true'
 
 " Airline
 let g:airline_theme='minimalist'
+
+" Nerd Tree
+let NERDTreeShowHidden=1
+map <C-n> :NERDTreeToggle<CR>
+set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*
+let NERDTreeRespectWildIgnore=1

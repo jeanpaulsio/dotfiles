@@ -29,6 +29,9 @@ export PATH="/usr/local/sbin:$PATH"
 # Yarn
 export PATH="$HOME/.yarn/bin:$PATH"
 
+# Spaceship
+SPACESHIP_DIR_TRUNC_REPO=false
+
 # Git
 alias ga='git add'
 alias gp='git push'
@@ -49,6 +52,22 @@ alias gf='git reflog'
 # Other Aliases
 alias code='cd ~/Desktop/code'
 alias dotfiles='cd ~/Desktop/code/dotfiles'
+alias reloadzsh='source ~/.zshrc'
+alias c='clear'
+
+# Open Listings Aliases
+alias ol='cd ~/Desktop/code/open_listings'
+alias olm='cd ~/Desktop/code/open_listings_mobile'
+alias ol_ngrok='ol && ./bin/custom/ol_ngrok ol'
+alias ol_ngrok2='ol && ./bin/custom/ol_ngrok ol2'
+
+# Rails Stuff
+alias mail.rake="rake -T | grep 'rake mail'"
+alias tailtestlog="tail -f log/test.log"
+alias rt="rails test"
+
+# Exercism
+alias exswiftgen="swift package generate-xcodeproj"
 
 # Ack Fix
 export LC_CTYPE=en_US.UTF-8
@@ -60,3 +79,9 @@ if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
 fi
 
 ssh-add -K ~/.ssh/id_rsa
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Fastlane stuff
+export PATH="$HOME/.fastlane/bin:$PATH"
