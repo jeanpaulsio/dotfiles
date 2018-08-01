@@ -67,7 +67,7 @@ alias tailtestlog="tail -f log/test.log"
 alias rt="rails test"
 
 # Exercism
-alias exswiftgen="swift package generate-xcodeproj"
+alias swiftgen="swift package generate-xcodeproj"
 
 # Ack Fix
 export LC_CTYPE=en_US.UTF-8

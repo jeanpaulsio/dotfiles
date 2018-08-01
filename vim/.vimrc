@@ -40,8 +40,8 @@ set cursorline
 set cursorcolumn
 set number
 set nofoldenable
-set list
-set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»
+" set list
+" set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»
 set hlsearch
 set ruler
 
@@ -97,6 +97,7 @@ let g:jsx_ext_required = 0
 let g:prettier#config#semi = 'true'
 let g:prettier#config#single_quote = 'false'
 let g:prettier#config#bracket_spacing = 'true'
+let g:prettier#config#trailing_comma = 'all'
 
 " Airline
 let g:airline_theme='minimalist'
@@ -106,3 +107,6 @@ let NERDTreeShowHidden=1
 map <C-n> :NERDTreeToggle<CR>
 set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*
 let NERDTreeRespectWildIgnore=1
+
+" Syntastic
+let g:syntastic_swift_checkers = ['swiftlint']
