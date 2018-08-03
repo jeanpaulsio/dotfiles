@@ -56,10 +56,14 @@ alias reloadzsh='source ~/.zshrc'
 alias c='clear'
 
 # Open Listings Aliases
+alias start_sidekiq='ttab bundle exec sidekiq -q critical -q default -q low -q high'
+alias start_webpack='ttab bin/webpack-dev-server'
+alias start_renderd='ttab yarn renderd:watch'
 alias ol='cd ~/Desktop/code/open_listings'
 alias olm='cd ~/Desktop/code/open_listings_mobile'
 alias ol_ngrok='ol && ./bin/custom/ol_ngrok ol'
 alias ol_ngrok2='ol && ./bin/custom/ol_ngrok ol2'
+alias olstart='start_sidekiq; start_webpack; start_renderd'
 
 # Rails Stuff
 alias mail.rake="rake -T | grep 'rake mail'"

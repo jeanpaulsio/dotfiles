@@ -136,6 +136,8 @@ System Preferences > Keyboard > Key Repeat         = Fast
 System Preferences > Keyboard > Delay Until Repeat = Short
 ```
 
+ttab for iTerm: https://www.npmjs.com/package/ttab
+
 ---
 
 ## Symlink Config
