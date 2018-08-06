@@ -1,4 +1,5 @@
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+eval "$(direnv hook $SHELL)"
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -56,9 +57,9 @@ alias reloadzsh='source ~/.zshrc'
 alias c='clear'
 
 # Open Listings Aliases
-alias start_sidekiq='ttab bundle exec sidekiq -q critical -q default -q low -q high'
-alias start_webpack='ttab bin/webpack-dev-server'
-alias start_renderd='ttab yarn renderd:watch'
+alias start_sidekiq='bundle exec sidekiq -q critical -q default -q low -q high'
+alias start_webpack='bin/webpack-dev-server'
+alias start_renderd='yarn renderd:watch'
 alias ol='cd ~/Desktop/code/open_listings'
 alias olm='cd ~/Desktop/code/open_listings_mobile'
 alias ol_ngrok='ol && ./bin/custom/ol_ngrok ol'
