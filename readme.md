@@ -146,4 +146,6 @@ ttab for iTerm: https://www.npmjs.com/package/ttab
 ln -s ~/Desktop/code/dotfiles/zsh/.zshrc ~/.zshrc
 ln -s ~/Desktop/code/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -s ~/Desktop/code/dotfiles/vim/.vimrc ~/.vimrc
+ln -s ~/Desktop/code/dotfiles/other/.irbrc ~/.irbrc
+ln -s ~/Desktop/code/dotfiles/other/.pryrc ~/.pryrc
 ```
