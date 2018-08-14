@@ -1,5 +1,6 @@
 eval "$(direnv hook $SHELL)"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -90,3 +91,4 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # Fastlane stuff
 export PATH="$HOME/.fastlane/bin:$PATH"
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
