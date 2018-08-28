@@ -1,22 +1,5 @@
 syntax on
 
-let g:dracula_italic = 0
-colorscheme dracula
-set background=dark
-highlight Normal ctermbg=None
-
-" UI
-set guifont=Operator\ Mono\ Book:h14
-
-" Removes scrollbars
-set guioptions=
-
-" use 256 colors in terminal
-if !has("gui_running")
-    set t_Co=256
-    set term=screen-256color
-endif
-
 " fix cursor display in cygwin
 if has("win32unix")
     let &t_ti.="\e[1 q"
