@@ -16,6 +16,7 @@ source $ZSH/oh-my-zsh.sh
 # Android
 export ANDROID_HOME=${HOME}/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/tools/bin
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 # Node Version Manager
@@ -59,11 +60,14 @@ alias c='clear'
 
 # Open Listings Aliases
 alias ol='cd ~/Desktop/code/open_listings'
+alias olngrok = './bin/custom/ol_ngrok ol'
+alias olngrok2 = './bin/custom/ol_ngrok ol'
 
 # Rails Stuff
 alias mail.rake="rake -T | grep 'rake mail'"
 alias ttl="tail -f log/test.log"
 alias rt="rails test"
+alias sandbox="rails console --sandbox"
 
 # Exercism
 alias swiftgen="swift package generate-xcodeproj"
