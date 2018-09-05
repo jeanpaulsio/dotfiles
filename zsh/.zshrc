@@ -60,8 +60,8 @@ alias c='clear'
 
 # Open Listings Aliases
 alias ol='cd ~/Desktop/code/open_listings'
-alias olngrok = './bin/custom/ol_ngrok ol'
-alias olngrok2 = './bin/custom/ol_ngrok ol'
+alias olngrok='./bin/custom/ol_ngrok ol'
+alias olngrok2='./bin/custom/ol_ngrok ol2'
 
 # Rails Stuff
 alias mail.rake="rake -T | grep 'rake mail'"
