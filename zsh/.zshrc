@@ -1,4 +1,3 @@
-eval "$(direnv hook $SHELL)"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
@@ -57,11 +56,6 @@ alias code='cd ~/Desktop/code'
 alias dotfiles='cd ~/Desktop/code/dotfiles'
 alias reloadzsh='source ~/.zshrc'
 alias c='clear'
-
-# Open Listings Aliases
-alias ol='cd ~/Desktop/code/open_listings'
-alias olngrok='ol && ./bin/custom/ol_ngrok ol'
-alias olngrok2='ol && ./bin/custom/ol_ngrok ol2'
 
 # Rails Stuff
 alias mail.rake="rake -T | grep 'rake mail'"
