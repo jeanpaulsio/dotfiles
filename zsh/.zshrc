@@ -4,6 +4,8 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+ssh-add -K ~/.ssh/id_rsa
+
 # Theme
 ZSH_THEME="robbyrussell"
 
@@ -74,8 +76,6 @@ export LC_ALL=en_US.UTF-8
 if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
   . ~/.config/exercism/exercism_completion.zsh
 fi
-
-ssh-add -K ~/.ssh/id_rsa
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
