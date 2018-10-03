@@ -118,6 +118,7 @@ https://github.com/scrooloose/nerdtree
 
 - https://github.com/vim-scripts/DuoTones-Dark
 - https://github.com/atelierbram/Base2Tone-iterm2
+- https://github.com/sdras/night-owl-vscode-theme
 
 ---
 
