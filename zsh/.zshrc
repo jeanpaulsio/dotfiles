@@ -1,9 +1,10 @@
-eval "$(direnv hook $SHELL)"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+
+ssh-add -K ~/.ssh/id_rsa
 
 # Theme
 ZSH_THEME="robbyrussell"
@@ -58,11 +59,6 @@ alias dotfiles='cd ~/Desktop/code/dotfiles'
 alias reloadzsh='source ~/.zshrc'
 alias c='clear'
 
-# Open Listings Aliases
-alias ol='cd ~/Desktop/code/open_listings'
-alias olngrok='ol && ./bin/custom/ol_ngrok ol'
-alias olngrok2='ol && ./bin/custom/ol_ngrok ol2'
-
 # Rails Stuff
 alias mail.rake="rake -T | grep 'rake mail'"
 alias ttl="tail -f log/test.log"
@@ -80,8 +76,6 @@ export LC_ALL=en_US.UTF-8
 if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
   . ~/.config/exercism/exercism_completion.zsh
 fi
-
-ssh-add -K ~/.ssh/id_rsa
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
