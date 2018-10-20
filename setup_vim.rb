@@ -2,7 +2,7 @@
 class SetupVim
   def self.execute
     install_pathogen
-    # download_plugins
+    download_plugins
     update_theme
     update_vimrc
 
@@ -27,7 +27,7 @@ class SetupVim
   def self.update_theme
     system 'echo "Updating Theme"'
     system 'mkdir ~/.vim/colors'
-    system 'cp vim/colors/base16-duotone-dark.vim ~/.vim/colors/base16-duotone-dark.vim'
+    system 'cp vim/colors/dracula.vim ~/.vim/colors/dracula.vim'
   end
 
   def self.update_vimrc
