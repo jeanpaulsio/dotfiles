@@ -1,4 +1,7 @@
 syntax on
+let g:dracula_italic = 0
+colorscheme dracula
+highlight Normal ctermbg=None
 
 " fix cursor display in cygwin
 if has("win32unix")
@@ -23,8 +26,8 @@ set cursorline
 set cursorcolumn
 set number
 set nofoldenable
-" set list
-" set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»
+set list
+set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»
 set hlsearch
 set ruler
 
@@ -39,8 +42,8 @@ set guicursor=i:ver25-iCursor
 let loaded_matchparen=1
 let html_no_rendering=1
 set noshowmatch
-" set nocursorline
-" set nocursorcolumn
+set nocursorline
+set nocursorcolumn
 set lazyredraw
 set scrolljump=8
 
@@ -97,6 +100,3 @@ let NERDTreeShowHidden=1
 map <C-n> :NERDTreeToggle<CR>
 set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*
 let NERDTreeRespectWildIgnore=1
-
-" Syntastic
-let g:syntastic_swift_checkers = ['swiftlint']
