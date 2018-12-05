@@ -28,6 +28,13 @@ set nofoldenable
 set hlsearch
 set ruler
 
+" Cursor updates
+if $TERM_PROGRAM =~ "iTerm"
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
+endif
+set guicursor=i:ver25-iCursor
+
 " Speed Optimizations
 let loaded_matchparen=1
 let html_no_rendering=1
