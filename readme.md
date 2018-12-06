@@ -149,4 +149,12 @@ ln -s ~/Desktop/code/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -s ~/Desktop/code/dotfiles/vim/.vimrc ~/.vimrc
 ln -s ~/Desktop/code/dotfiles/other/.irbrc ~/.irbrc
 ln -s ~/Desktop/code/dotfiles/other/.pryrc ~/.pryrc
+ln -s ~/Desktop/code/dotfiles/.gitignore_global ~/.gitignore_global
+
+```
+
+## Global Git Ignore
+
+```
+git config --global core.excludesfile ~/.gitignore_global
 ```
