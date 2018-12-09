@@ -5,10 +5,10 @@ highlight Normal ctermbg=None
 
 " fix cursor display in cygwin
 if has("win32unix")
-    let &t_ti.="\e[1 q"
-    let &t_SI.="\e[5 q"
-    let &t_EI.="\e[1 q"
-    let &t_te.="\e[0 q"
+  let &t_ti.="\e[1 q"
+  let &t_SI.="\e[5 q"
+  let &t_EI.="\e[1 q"
+  let &t_te.="\e[0 q"
 endif
 
 if exists('+colorcolumn')
@@ -36,7 +36,7 @@ let loaded_matchparen=1
 let html_no_rendering=1
 set noshowmatch
 set nocursorline
-set nocursorcolumn
+" set nocursorcolumn
 set lazyredraw
 set scrolljump=8
 
