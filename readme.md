@@ -6,22 +6,13 @@
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Make sure to install ack with brew
+🍺Brew a couple of things
 
 ```
 $ brew update
 $ brew install ack
+$ brew install tmux
 ```
-
----
-
-## iTerm
-
-Download iTerm:  
-https://www.iterm2.com/downloads.html
-
-(Natural Text Editing)
-Preferences → Profiles → Keys → Keyboard Behavior → Load Preset → Natural Text Editing
 
 ---
 
