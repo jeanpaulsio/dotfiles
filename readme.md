@@ -10,8 +10,16 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 ```
 $ brew update
+$ brew install git
 $ brew install ack
 $ brew install tmux
+```
+
+Configuring git
+
+```
+git config --global user.name "jeanpaulsio"
+git config --global user.email "sio.jeanpaul@gmail.com"
 ```
 
 ---
