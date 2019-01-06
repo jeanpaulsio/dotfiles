@@ -145,12 +145,12 @@ ttab for iTerm: https://www.npmjs.com/package/ttab
 ## Symlink Config
 
 ```
-ln -s ~/Desktop/code/dotfiles/zsh/.zshrc ~/.zshrc
-ln -s ~/Desktop/code/dotfiles/tmux/.tmux.conf ~/.tmux.conf
-ln -s ~/Desktop/code/dotfiles/vim/.vimrc ~/.vimrc
-ln -s ~/Desktop/code/dotfiles/other/.irbrc ~/.irbrc
-ln -s ~/Desktop/code/dotfiles/other/.pryrc ~/.pryrc
-ln -s ~/Desktop/code/dotfiles/.gitignore_global ~/.gitignore_global
+ln -s ~/code/dotfiles/zsh/.zshrc ~/.zshrc
+ln -s ~/code/dotfiles/tmux/.tmux.conf ~/.tmux.conf
+ln -s ~/code/dotfiles/vim/.vimrc ~/.vimrc
+ln -s ~/code/dotfiles/other/.irbrc ~/.irbrc
+ln -s ~/code/dotfiles/other/.pryrc ~/.pryrc
+ln -s ~/code/dotfiles/.gitignore_global ~/.gitignore_global
 
 ```
 
