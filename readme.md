@@ -28,6 +28,12 @@ Testing it out
 git clone https://github.com/jeanpaulsio/dotfiles.git
 ```
 
+Commit a change and push it up. When it asks for a username and password, make sure to generate a personal access token:
+
+```
+https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
+```
+
 ---
 
 ## zsh
@@ -35,14 +41,6 @@ git clone https://github.com/jeanpaulsio/dotfiles.git
 ```
 $ brew install zsh zsh-completions
 ```
-
-Inside of iTerm:
-
-Preferences → General → Command → bin/zsh --login
-Preferences → Text → Non-ASCII Font → 12pt Meslo LG S Regular for Powerline
-
-Download Spaceship:  
-https://github.com/denysdovhan/spaceship-prompt
 
 Oh My Zsh:  
 https://github.com/robbyrussell/oh-my-zsh
@@ -121,9 +119,7 @@ https://github.com/scrooloose/nerdtree
 
 ## Themes
 
-- https://github.com/vim-scripts/DuoTones-Dark
-- https://github.com/atelierbram/Base2Tone-iterm2
-- https://github.com/sdras/night-owl-vscode-theme
+- https://draculatheme.com
 
 ---
 
