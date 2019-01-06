@@ -22,6 +22,12 @@ git config --global user.name "jeanpaulsio"
 git config --global user.email "sio.jeanpaul@gmail.com"
 ```
 
+Testing it out
+
+```
+git clone https://github.com/jeanpaulsio/dotfiles.git
+```
+
 ---
 
 ## zsh
