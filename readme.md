@@ -149,7 +149,6 @@ ln -s ~/code/dotfiles/vim/.vimrc ~/.vimrc
 ln -s ~/code/dotfiles/other/.irbrc ~/.irbrc
 ln -s ~/code/dotfiles/other/.pryrc ~/.pryrc
 ln -s ~/code/dotfiles/.gitignore_global ~/.gitignore_global
-
 ```
 
 ## Global Git Ignore
