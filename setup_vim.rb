@@ -32,7 +32,7 @@ class SetupVim
 
   def self.update_vimrc
     system 'rm -rf ~/.vimrc'
-    system 'ln -s ~/Desktop/code/dotfiles/vim/.vimrc ~/.vimrc'
+    system 'ln -s ~/code/dotfiles/vim/.vimrc ~/.vimrc'
   end
 
   private
