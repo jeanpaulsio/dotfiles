@@ -137,6 +137,7 @@ Change Keyspeed to make navigating Vim more chill
 System Preferences > Keyboard > Key Repeat         = Fast
 System Preferences > Keyboard > Delay Until Repeat = Short
 ```
+
 ---
 
 ## Symlink Config
