@@ -23,7 +23,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set cursorline
-set cursorcolumn
+" set cursorcolumn
 set number
 set nofoldenable
 set list

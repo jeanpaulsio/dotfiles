@@ -156,3 +156,25 @@ ln -s ~/code/dotfiles/.gitignore_global ~/.gitignore_global
 ```
 git config --global core.excludesfile ~/.gitignore_global
 ```
+
+---
+
+# Other
+
+Apps
+
+```
+Google Chrome
+Spotify
+Notion
+```
+
+---
+
+* NPM and Node: https://www.npmjs.com/get-npm
+
+__Heroku__
+
+```
+brew install heroku/brew/heroku
+```
