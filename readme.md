@@ -171,6 +171,7 @@ Alfred - https://www.alfredapp.com/
 Dropbox (for alfred)
 One Password - https://1password.com/downloads/mac/
 Better Touch Tool - https://folivora.ai/
+Keyboard Clean Tool - https://folivora.ai/keyboardcleantool
 VSCode
 ```
 
