@@ -167,6 +167,11 @@ Apps
 Google Chrome
 Spotify
 Notion
+Alfred - https://www.alfredapp.com/
+Dropbox (for alfred)
+One Password - https://1password.com/downloads/mac/
+Better Touch Tool - https://folivora.ai/
+VSCode
 ```
 
 ---
