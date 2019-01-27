@@ -24,6 +24,8 @@ __Extensions__
 * vim
 * vimL
 * vscode-viml-syntax
+* git lens
+* prettier
 
 __Other__
 
@@ -45,4 +47,16 @@ __keybindings__
     "when": "editorTextFocus"
   }
 ]
+```
+
+__settings__
+
+```
+{
+    "search.location": "panel",
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "workbench.colorTheme": "Night Owl",
+    "editor.fontFamily": "Operator Mono"
+}
 ```

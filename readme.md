@@ -175,6 +175,15 @@ Keyboard Clean Tool - https://folivora.ai/keyboardcleantool
 VSCode
 ```
 
+__Better Touch Tool__
+
+Key sequence
+
+```
+Shift + Option + L -> Move Right a space
+Shift + Option + H -> Move Left a space
+```
+
 ---
 
 * NPM and Node: https://www.npmjs.com/get-npm
