@@ -173,6 +173,7 @@ One Password - https://1password.com/downloads/mac/
 Better Touch Tool - https://folivora.ai/
 Keyboard Clean Tool - https://folivora.ai/keyboardcleantool
 VSCode
+iTerm - https://www.iterm2.com/
 ```
 
 __Better Touch Tool__
@@ -193,3 +194,13 @@ __Heroku__
 ```
 brew install heroku/brew/heroku
 ```
+
+__Theming__
+
+NightOwl
+
+* VSCode - https://github.com/sdras/night-owl-vscode-theme
+* Alfred - https://www.alfredapp.com/extras/theme/QCvb0CkL1J/
+* Jetbrains - https://github.com/xdrop/night-owl-jetbrains
+* iTerm - https://github.com/nickcernis/iterm2-night-owl
+* Vim - https://github.com/Khaledgarbaya/night-owl-vim-theme

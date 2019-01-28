@@ -1,6 +1,6 @@
 syntax on
 let g:dracula_italic = 0
-colorscheme dracula
+colorscheme night-owl
 highlight Normal ctermbg=None
 
 " fix cursor display in cygwin
@@ -98,5 +98,3 @@ let g:airline_theme='minimalist'
 " Nerd Tree
 let NERDTreeShowHidden=1
 map <C-n> :NERDTreeToggle<CR>
-set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*
-let NERDTreeRespectWildIgnore=1
