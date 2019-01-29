@@ -26,6 +26,7 @@ __Extensions__
 * vscode-viml-syntax
 * git lens
 * prettier
+* react native tools - https://marketplace.visualstudio.com/items?itemName=vsmobile.vscode-react-native
 
 __Other__
 
