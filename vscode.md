@@ -53,10 +53,15 @@ __settings__
 
 ```
 {
-    "search.location": "panel",
-    "editor.tabSize": 2,
-    "editor.detectIndentation": false,
-    "workbench.colorTheme": "Night Owl",
-    "editor.fontFamily": "Operator Mono"
+  "editor.fontFamily": "Operator Mono",
+  "workbench.colorTheme": "Gloom",
+  "search.location": "panel",
+  "editor.formatOnSave": true,
+  "prettier.eslintIntegration": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.minimap.enabled": true,
+  "window.zoomLevel": 1
 }
+
 ```
