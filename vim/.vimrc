@@ -1,6 +1,6 @@
 syntax on
 let g:dracula_italic = 0
-colorscheme night-owl
+colorscheme dracula
 highlight Normal ctermbg=None
 
 " fix cursor display in cygwin
