@@ -31,6 +31,7 @@ alias code='cd ~/code'
 alias dotfiles='cd ~/code/dotfiles'
 alias reloadzsh='source ~/.zshrc'
 alias c='clear'
+alias rmjava='rm -rf **/*.class'
 
 # Ack Fix
 export LC_CTYPE=en_US.UTF-8
@@ -51,3 +52,6 @@ function vs {
         open -a "Visual Studio Code" "$argPath"
     fi
 }
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
