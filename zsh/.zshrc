@@ -31,7 +31,8 @@ alias code='cd ~/code'
 alias dotfiles='cd ~/code/dotfiles'
 alias reloadzsh='source ~/.zshrc'
 alias c='clear'
-alias rmjava='rm -rf **/*.class'
+alias rmjava='rm -rf **/*.class && gc .'
+alias prettierrb="rbprettier --write '**/*.rb'"
 
 # Ack Fix
 export LC_CTYPE=en_US.UTF-8
