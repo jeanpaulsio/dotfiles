@@ -30,6 +30,7 @@ set list
 set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»
 set hlsearch
 set ruler
+set wildmenu
 
 " Cursor updates
 if $TERM_PROGRAM =~ "iTerm"
