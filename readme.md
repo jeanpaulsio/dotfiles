@@ -176,7 +176,7 @@ VSCode
 iTerm - https://www.iterm2.com/
 ```
 
-__Better Touch Tool__
+**Better Touch Tool**
 
 Key sequence
 
@@ -187,20 +187,10 @@ Shift + Option + H -> Move Left a space
 
 ---
 
-* NPM and Node: https://www.npmjs.com/get-npm
+- NPM and Node: https://www.npmjs.com/get-npm
 
-__Heroku__
+**Heroku**
 
 ```
 brew install heroku/brew/heroku
 ```
-
-__Theming__
-
-NightOwl
-
-* VSCode - https://github.com/sdras/night-owl-vscode-theme
-* Alfred - https://www.alfredapp.com/extras/theme/QCvb0CkL1J/
-* Jetbrains - https://github.com/xdrop/night-owl-jetbrains
-* iTerm - https://github.com/nickcernis/iterm2-night-owl
-* Vim - https://github.com/Khaledgarbaya/night-owl-vim-theme
