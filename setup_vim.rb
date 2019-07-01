@@ -45,7 +45,6 @@ class SetupVim
       ctrlp: 'https://github.com/ctrlpvim/ctrlp.vim.git',
       indent_line: 'https://github.com/Yggdroot/indentLine.git',
       nerd_tree: 'https://github.com/scrooloose/nerdtree.git',
-      swift_vim: 'https://github.com/keith/swift.vim',
       syntastic: 'https://github.com/vim-syntastic/syntastic.git',
       typescript_vim: 'https://github.com/leafgarland/typescript-vim.git',
       vim_airline: 'https://github.com/vim-airline/vim-airline.git',

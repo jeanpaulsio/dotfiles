@@ -1,9 +1,10 @@
+" Theme
 syntax on
 let g:dracula_italic = 0
 colorscheme dracula
 highlight Normal ctermbg=None
 
-" fix cursor display in cygwin
+" Fix cursor display in cygwin
 if has("win32unix")
   let &t_ti.="\e[1 q"
   let &t_SI.="\e[5 q"
@@ -11,6 +12,13 @@ if has("win32unix")
   let &t_te.="\e[0 q"
 endif
 
+" Fix cursor display in iTerm
+if $TERM_PROGRAM =~ "iTerm"
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
+endif
+
+" Add 80 character column
 if exists('+colorcolumn')
   set colorcolumn=80
 else
@@ -32,12 +40,6 @@ set hlsearch
 set ruler
 set wildmenu
 
-" Cursor updates
-if $TERM_PROGRAM =~ "iTerm"
-    let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
-    let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
-endif
-
 " Speed Optimizations
 let loaded_matchparen=1
 let html_no_rendering=1
@@ -52,15 +54,15 @@ imap jk <Esc>
 imap kj <Esc>
 let mapleader = ","
 
-" move line down/up
-noremap K ddkkp
+" Move line down/up
 noremap J ddp
+noremap K ddkkp
 
 " Resizes Panes
-nmap 7 :res -2<CR>
-nmap 8 :res +2<CR>
-nmap 9 :vertical res -2<CR>
-nmap 0 :vertical res +2<CR>
+nmap <Up> :res -2<CR>
+nmap <Down> :res +2<CR>
+nmap <Left> :vertical res -2<CR>
+nmap <Right> :vertical res +2<CR>
 
 " Navigation
 nnoremap <C-J> <C-W><C-J>
