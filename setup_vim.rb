@@ -60,6 +60,7 @@ class SetupVim
       vim_prettier: 'https://github.com/prettier/vim-prettier.git',
       vim_rails: 'https://github.com/tpope/vim-rails.git',
       vim_signature: 'https://github.com/kshenoy/vim-signature.git',
+      vim_surround: 'https://github.com/tpope/vim-surround.git',
       vim_unimpaired: 'https://github.com/tpope/vim-unimpaired.git'
     }
   end
