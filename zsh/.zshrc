@@ -35,3 +35,4 @@ alias prettierrb="rbprettier --write '**/*.rb'"
 # Ack Fix
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+
