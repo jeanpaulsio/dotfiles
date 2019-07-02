@@ -1,6 +1,6 @@
 # VS Code setup
 
-__Enables VS code from CLI__
+**Enables VS code from CLI**
 
 ```zsh
 function vs {
@@ -15,28 +15,26 @@ function vs {
 }
 ```
 
-
-__Dracula Theme__
+**Dracula Theme**
 https://draculatheme.com/visual-studio-code/
 
-__Extensions__
+**Extensions**
 
-* vim
-* vimL
-* vscode-viml-syntax
-* git lens
-* prettier
-* react native tools - https://marketplace.visualstudio.com/items?itemName=vsmobile.vscode-react-native
+- vim
+- vimL
+- vscode-viml-syntax
+- git lens
+- prettier
+- react native tools - https://marketplace.visualstudio.com/items?itemName=vsmobile.vscode-react-native
 
-__Other__
+**Other**
 
 Make the search not shitty
 
-* search settings for "search location"
-* change from `sidebar` to `panel`
+- search settings for "search location"
+- change from `sidebar` to `panel`
 
-
-__keybindings__
+**keybindings**
 
 ```
 [
@@ -50,12 +48,11 @@ __keybindings__
 ]
 ```
 
-__settings__
+**settings**
 
 ```
 {
   "editor.fontFamily": "Operator Mono",
-  "workbench.colorTheme": "Gloom",
   "search.location": "panel",
   "editor.formatOnSave": true,
   "prettier.eslintIntegration": true,
