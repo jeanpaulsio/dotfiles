@@ -36,3 +36,6 @@ alias prettierrb="rbprettier --write '**/*.rb'"
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
+export ASDF_DATA_DIR=`brew --prefix asdf`/
+source $ASDF_DATA_DIR/asdf.sh
+
