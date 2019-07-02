@@ -27,8 +27,6 @@ alias gta='git tag -a -m'
 alias gf='git reflog'
 
 # Other Aliases
-alias code='cd ~/code'
-alias dotfiles='cd ~/code/dotfiles'
 alias reloadzsh='source ~/.zshrc'
 alias c='clear'
 alias rmjava='rm -rf **/*.class && gc .'
@@ -37,22 +35,6 @@ alias prettierrb="rbprettier --write '**/*.rb'"
 # Ack Fix
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-
-# Exercism
-if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
-  . ~/.config/exercism/exercism_completion.zsh
-fi
-
-function vs {
-    if [[ $# = 0 ]]
-    then
-        open -a "Visual Studio Code"
-    else
-        local argPath="$1"
-        [[ $1 = /* ]] && argPath="$1" || argPath="$PWD/${1#./}"
-        open -a "Visual Studio Code" "$argPath"
-    fi
-}
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
