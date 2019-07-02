@@ -58,6 +58,7 @@ class SetupVim
       vim_rails: 'https://github.com/tpope/vim-rails.git',
       vim_signature: 'https://github.com/kshenoy/vim-signature.git',
       vim_surround: 'https://github.com/tpope/vim-surround.git',
+      vim_test: 'https://github.com/janko/vim-test.git',
       vim_unimpaired: 'https://github.com/tpope/vim-unimpaired.git'
     }
   end
