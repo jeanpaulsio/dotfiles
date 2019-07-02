@@ -13,6 +13,13 @@ $ brew update
 $ brew install git
 $ brew install ack
 $ brew install tmux
+$ brew install asdf
+```
+
+Configuring asdf
+
+```
+https://asdf-vm.com/#/core-manage-asdf-vm
 ```
 
 Configuring git
