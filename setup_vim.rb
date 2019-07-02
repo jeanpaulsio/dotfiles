@@ -59,6 +59,7 @@ class SetupVim
       vim_jsx: 'https://github.com/mxw/vim-jsx.git',
       vim_prettier: 'https://github.com/prettier/vim-prettier.git',
       vim_rails: 'https://github.com/tpope/vim-rails.git',
+      vim_signature: 'https://github.com/kshenoy/vim-signature.git',
       vim_unimpaired: 'https://github.com/tpope/vim-unimpaired.git'
     }
   end
