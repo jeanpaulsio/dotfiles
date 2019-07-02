@@ -99,5 +99,3 @@ let g:airline_theme='minimalist'
 " NERDTree
 let NERDTreeShowHidden=1
 map <C-n> :NERDTreeToggle<CR>
-autocmd vimenter * NERDTree
-autocmd StdinReadPre * let s:std_in=1
