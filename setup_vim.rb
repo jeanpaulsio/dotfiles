@@ -51,6 +51,7 @@ class SetupVim
       vim_commentary: 'https://github.com/tpope/vim-commentary.git',
       vim_endwise: 'https://github.com/tpope/vim-endwise.git',
       vim_expand_region: 'https://github.com/terryma/vim-expand-region.git',
+      vim_fugitive: 'https://github.com/tpope/vim-fugitive.git',
       vim_gitgutter: 'https://github.com/airblade/vim-gitgutter.git',
       vim_javascript: 'https://github.com/pangloss/vim-javascript.git',
       vim_jsx: 'https://github.com/mxw/vim-jsx.git',
