@@ -37,6 +37,7 @@ set nofoldenable
 set list
 set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»
 set hlsearch
+set incsearch
 set ruler
 set wildmenu
 
@@ -79,6 +80,17 @@ nnoremap tn  :tabnext<Space>
 nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
 
+" Seach for current selection when pressing *
+xnoremap * :<C-u>call <SID>VSetSearch()<CR>/<C-R>=@/<CR><CR>
+xnoremap # :<C-u>call <SID>VSetSearch()<CR>?<C-R>=@/<CR><CR>
+
+function! s:VSetSearch()
+  let temp = @s
+  norm! gv"sy
+  let @/ = '\V' . substitute(escape(@s, '/\'), '\n', '\\n', 'g')
+  let @s = temp
+endfunction
+
 " Pathogen
 execute pathogen#infect()
 
@@ -94,7 +106,7 @@ let g:prettier#config#bracket_spacing = 'true'
 let g:prettier#config#trailing_comma = 'all'
 
 " Airline
-let g:airline_theme='minimalist'
+let g:airline_theme='deus'
 
 " NERDTree
 let NERDTreeShowHidden=1
