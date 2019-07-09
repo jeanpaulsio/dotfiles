@@ -50,6 +50,10 @@ set nocursorcolumn
 set lazyredraw
 set scrolljump=8
 
+" Autoread files
+set autoread
+autocmd CursorHold * checktime
+
 " Shortcuts
 imap jk <Esc>
 imap kj <Esc>
