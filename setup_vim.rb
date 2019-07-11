@@ -43,6 +43,7 @@ class SetupVim
       ale: 'https://github.com/w0rp/ale.git',
       auto_pairs: 'https://github.com/jiangmiao/auto-pairs.git',
       ctrlp: 'https://github.com/ctrlpvim/ctrlp.vim.git',
+      indent_line: 'https://github.com/Yggdroot/indentLine.git',
       nerd_tree: 'https://github.com/scrooloose/nerdtree.git',
       syntastic: 'https://github.com/vim-syntastic/syntastic.git',
       vim_airline: 'https://github.com/vim-airline/vim-airline.git',
