@@ -39,3 +39,14 @@ export LC_ALL=en_US.UTF-8
 export ASDF_DATA_DIR=`brew --prefix asdf`/
 source $ASDF_DATA_DIR/asdf.sh
 
+# VS Code
+function vs {
+    if [[ $# = 0 ]]
+    then
+        open -a "Visual Studio Code"
+    else
+        local argPath="$1"
+        [[ $1 = /* ]] && argPath="$1" || argPath="$PWD/${1#./}"
+        open -a "Visual Studio Code" "$argPath"
+    fi
+}
