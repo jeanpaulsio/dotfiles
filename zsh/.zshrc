@@ -2,7 +2,18 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Theme
-ZSH_THEME="theunraveler"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
+# Theme Stuff
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+# Add a space in the first prompt
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%f"
+# Visual customisation of the second prompt line
+local user_symbol="$"
+if [[ $(print -P "%#") =~ "#" ]]; then
+    user_symbol = "#"
+fi
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%{%B%F{black}%K{yellow}%} $user_symbol%{%b%f%k%F{yellow}%} %{%f%}"
 
 # Plugins
 plugins=(git docker rails ruby tmux yarn asdf)
@@ -50,3 +61,9 @@ function vs {
         open -a "Visual Studio Code" "$argPath"
     fi
 }
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jp/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jp/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/jp/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jp/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
