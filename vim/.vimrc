@@ -6,6 +6,7 @@ syntax on
 let g:dracula_italic = 0
 colorscheme dracula
 highlight Normal ctermbg=None
+set guifont=OperatorMono-Book:h16
 
 " Fix cursor display in cygwin
 if has("win32unix")

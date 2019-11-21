@@ -34,7 +34,7 @@ class SetupVim
 
   def update_vimrc
     system 'rm -rf ~/.vimrc'
-    system 'ln -s ~/code/dotfiles/vim/.vimrc ~/.vimrc'
+    system 'ln -s ~/jeanpaulsio/dotfiles/vim/.vimrc ~/.vimrc'
   end
 
   def plugins
