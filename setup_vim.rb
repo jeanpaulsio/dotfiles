@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 # vim set up
 class SetupVim
-  def self.execute
+  def execute
     install_pathogen
     download_plugins
     update_theme
@@ -9,12 +11,12 @@ class SetupVim
     system 'echo "All Done! 😎"'
   end
 
-  def self.install_pathogen
+  def install_pathogen
     system "mkdir -p ~/.vim/autoload ~/.vim/bundle && \
     curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim"
   end
 
-  def self.download_plugins
+  def download_plugins
     system 'echo "Downloading Plugins"'
     system 'mkdir ~/.vim/bundle'
     system 'rm -rf ~/.vim/bundle/*'
@@ -24,20 +26,18 @@ class SetupVim
     end
   end
 
-  def self.update_theme
+  def update_theme
     system 'echo "Updating Theme"'
     system 'mkdir ~/.vim/colors'
     system 'cp vim/colors/dracula.vim ~/.vim/colors/dracula.vim'
   end
 
-  def self.update_vimrc
+  def update_vimrc
     system 'rm -rf ~/.vimrc'
     system 'ln -s ~/code/dotfiles/vim/.vimrc ~/.vimrc'
   end
 
-  private
-
-  def self.plugins
+  def plugins
     {
       ack: 'https://github.com/mileszs/ack.vim.git',
       ale: 'https://github.com/w0rp/ale.git',
@@ -64,4 +64,4 @@ class SetupVim
   end
 end
 
-SetupVim.execute
+SetupVim.new.execute

@@ -1,3 +1,6 @@
+" Pathogen
+execute pathogen#infect()
+
 " Theme
 syntax on
 let g:dracula_italic = 0
@@ -14,8 +17,8 @@ endif
 
 " Fix cursor display in iTerm
 if $TERM_PROGRAM =~ "iTerm"
-    let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
-    let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
 endif
 
 " Add 80 character column
@@ -94,9 +97,6 @@ function! s:VSetSearch()
   let @/ = '\V' . substitute(escape(@s, '/\'), '\n', '\\n', 'g')
   let @s = temp
 endfunction
-
-" Pathogen
-execute pathogen#infect()
 
 " Ale
 let g:ale_emit_conflict_warnings = 0
