@@ -117,6 +117,14 @@ let g:airline_theme='deus'
 let NERDTreeShowHidden=1
 map <C-n> :NERDTreeToggle<CR>
 
+" Ack
+" Use silver searcher
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" Ctrl P
+" https://stackoverflow.com/questions/21346068/slow-performance-on-ctrlp-it-doesnt-work-to-ignore-some-folders
+let g:ctrlp_user_command = ['.git/', 'git ls-files --cached --others  --exclude-standard %s']
+
 " Open NERDTree automatically when Vim starts up
 " autocmd vimenter * NERDTree
 

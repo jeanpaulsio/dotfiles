@@ -14,6 +14,7 @@ brew install git
 brew install ack
 brew install tmux
 brew install asdf
+brew install the_silver_searcher
 ```
 
 Configuring asdf
