@@ -45,6 +45,9 @@ set ruler
 set wildmenu
 set mouse=a
 
+" Map leader
+let mapleader = ","
+
 " Speed Optimizations
 let loaded_matchparen=1
 let html_no_rendering=1
@@ -171,3 +174,6 @@ let $FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+cnoreabbrev Ack Ack!
+nnoremap <Leader>a :Ack!<Space>
