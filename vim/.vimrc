@@ -145,7 +145,7 @@ let g:airline_theme='challenger_deep'
 colorscheme challenger_deep
 
 highlight Normal ctermbg=None
-highlight SpecialKey ctermfg=black guifg=black
+highlight SpecialKey guifg=#1e1c31
 
 " Ale
 let g:ale_emit_conflict_warnings = 0
