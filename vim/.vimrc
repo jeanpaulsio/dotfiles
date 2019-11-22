@@ -44,6 +44,7 @@ set incsearch
 set ruler
 set wildmenu
 set mouse=a
+set shellpipe=>
 
 " Map leader
 let mapleader = ","
