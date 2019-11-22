@@ -1,6 +1,5 @@
 " UI
 syntax enable
-highlight Normal ctermbg=None
 set guifont=OperatorMono-Book:h16
 
 " Enable 24bit true color
@@ -144,6 +143,9 @@ let g:dracula_italic = 0
 let g:dracula_colorterm = 0
 let g:airline_theme='challenger_deep'
 colorscheme challenger_deep
+
+highlight Normal ctermbg=None
+highlight SpecialKey ctermfg=black guifg=black
 
 " Ale
 let g:ale_emit_conflict_warnings = 0
