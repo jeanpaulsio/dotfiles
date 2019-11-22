@@ -1,7 +1,12 @@
 " UI
-syntax on
+syntax enable
 highlight Normal ctermbg=None
 set guifont=OperatorMono-Book:h16
+
+" Enable 24bit true color
+if (has("termguicolors"))
+ set termguicolors
+endif
 
 " Fix cursor display in cygwin
 if has("win32unix")
@@ -116,6 +121,7 @@ Plug 'mileszs/ack.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-airline/vim-airline'
@@ -130,13 +136,14 @@ Plug 'yuezk/vim-js'
 
 " Theme
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 call plug#end()
 
 " Theme
 let g:dracula_italic = 0
 let g:dracula_colorterm = 0
-let g:airline_theme='dracula'
-colorscheme dracula
+let g:airline_theme='challenger_deep'
+colorscheme challenger_deep
 
 " Ale
 let g:ale_emit_conflict_warnings = 0
