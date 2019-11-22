@@ -1,4 +1,4 @@
-# Dotfiles
+# New Computer Setup
 
 ## Homebrew
 
@@ -6,15 +6,15 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-🍺Brew a couple of things
+🍺 Brew a couple of things
 
 ```bash
-brew update
 brew install git
 brew install ack
 brew install tmux
 brew install asdf
 brew install the_silver_searcher
+brew install fzf
 ```
 
 Configuring asdf
@@ -56,22 +56,6 @@ https://github.com/robbyrussell/oh-my-zsh
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
-
----
-
-## Vim
-
-Quick Installation:
-
-```bash
-ruby setup_vim.rb
-```
-
----
-
-## Themes
-
-- https://draculatheme.com
 
 ---
 
@@ -127,8 +111,8 @@ iTerm - https://www.iterm2.com/
 Key sequence
 
 ```txt
-Shift + Option + L -> Move Right a space
-Shift + Option + H -> Move Left a space
+Shift + Command + L -> Move Right a space
+Shift + Command + H -> Move Left a space
 ```
 
 ---

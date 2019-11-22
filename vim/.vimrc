@@ -1,10 +1,5 @@
-" Pathogen
-execute pathogen#infect()
-
-" Theme
+" UI
 syntax on
-let g:dracula_italic = 0
-colorscheme dracula
 highlight Normal ctermbg=None
 set guifont=OperatorMono-Book:h16
 
@@ -44,6 +39,7 @@ set hlsearch
 set incsearch
 set ruler
 set wildmenu
+set mouse=a
 
 " Speed Optimizations
 let loaded_matchparen=1
@@ -99,6 +95,49 @@ function! s:VSetSearch()
   let @s = temp
 endfunction
 
+" netrw
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
+
+" Plugins
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+Plug 'airblade/vim-gitgutter'
+Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'kshenoy/vim-signature'
+Plug 'mileszs/ack.vim'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-unimpaired'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'w0rp/ale'
+Plug 'Yggdroot/indentLine'
+
+" Languages
+Plug 'elixir-editors/vim-elixir'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'yuezk/vim-js'
+
+" Theme
+Plug 'dracula/vim', { 'as': 'dracula' }
+call plug#end()
+
+" Theme
+let g:dracula_italic = 0
+let g:dracula_colorterm = 0
+let g:airline_theme='dracula'
+colorscheme dracula
+
 " Ale
 let g:ale_emit_conflict_warnings = 0
 let g:ale_fixers = { 'javascript': ['prettier', 'eslint'], 'ruby': ['rubocop'] }
@@ -110,27 +149,14 @@ let g:prettier#config#single_quote = 'false'
 let g:prettier#config#bracket_spacing = 'true'
 let g:prettier#config#trailing_comma = 'all'
 
-" Airline
-let g:airline_theme='deus'
+" fzf
+nnoremap <C-f> :FZF<cr>
+nnoremap <C-p> :FZF<cr>
 
-" NERDTree
-let NERDTreeShowHidden=1
-map <C-n> :NERDTreeToggle<CR>
+" Changes the search command FZF uses to silver_searcher
+let $FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 
-" Ack
-" Use silver searcher
-let g:ackprg = 'ag --nogroup --nocolor --column'
-
-" Ctrl P
-" https://stackoverflow.com/questions/21346068/slow-performance-on-ctrlp-it-doesnt-work-to-ignore-some-folders
-let g:ctrlp_user_command = ['.git/', 'git ls-files --cached --others  --exclude-standard %s']
-
-" Open NERDTree automatically when Vim starts up
-" autocmd vimenter * NERDTree
-
-" Open NERDTree automatically when vim starts up on opening a directory
-" autocmd StdinReadPre * let s:std_in=1
-" autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
-
-" Close window if NERDTree is the last window open
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" Ag
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif

@@ -49,3 +49,5 @@ function vs {
         open -a "Visual Studio Code" "$argPath"
     fi
 }
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
