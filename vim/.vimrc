@@ -1,33 +1,3 @@
-" UI
-syntax enable
-set guifont=OperatorMono-Book:h16
-
-" Enable 24bit true color
-if (has("termguicolors"))
- set termguicolors
-endif
-
-" Fix cursor display in cygwin
-if has("win32unix")
-  let &t_ti.="\e[1 q"
-  let &t_SI.="\e[5 q"
-  let &t_EI.="\e[1 q"
-  let &t_te.="\e[0 q"
-endif
-
-" Fix cursor display in iTerm
-if $TERM_PROGRAM =~ "iTerm"
-  let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
-  let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
-endif
-
-" Add 80 character column
-if exists('+colorcolumn')
-  set colorcolumn=80
-else
-  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
-endif
-
 " Base Config
 set smartindent
 set tabstop=2
@@ -53,8 +23,6 @@ let mapleader = ","
 let loaded_matchparen=1
 let html_no_rendering=1
 set noshowmatch
-" set nocursorline
-" set nocursorcolumn
 set lazyredraw
 set scrolljump=8
 
@@ -139,17 +107,45 @@ Plug 'yuezk/vim-js'
 
 " Theme
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 call plug#end()
 
 " Theme
-" let g:dracula_italic = 0
-" let g:dracula_colorterm = 0
-let g:airline_theme='challenger_deep'
-colorscheme challenger_deep
+let g:dracula_italic = 0
+let g:dracula_colorterm = 0
+let g:airline_theme='dracula'
+colorscheme dracula
 
-highlight Normal ctermbg=None
-highlight SpecialKey guifg=#1e1c31
+syntax on
+set guifont=OperatorMono-Book:h16
+set t_ut=
+
+if exists("$TMUX")
+  set t_Co=256
+  set notermguicolors
+else
+  set termguicolors
+endif
+
+" Fix cursor display in cygwin
+if has("win32unix")
+  let &t_ti.="\e[1 q"
+  let &t_SI.="\e[5 q"
+  let &t_EI.="\e[1 q"
+  let &t_te.="\e[0 q"
+endif
+
+" Fix cursor display in iTerm
+if $TERM_PROGRAM =~ "iTerm"
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
+endif
+
+" Add 80 character column
+if exists('+colorcolumn')
+  set colorcolumn=80
+else
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
 
 " Ale
 let g:ale_emit_conflict_warnings = 0
