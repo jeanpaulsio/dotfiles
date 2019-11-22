@@ -98,8 +98,6 @@ System Preferences > Keyboard > Delay Until Repeat = Short
 ln -s ~/jeanpaulsio/dotfiles/zsh/.zshrc ~/.zshrc
 ln -s ~/jeanpaulsio/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -s ~/jeanpaulsio/dotfiles/vim/.vimrc ~/.vimrc
-ln -s ~/jeanpaulsio/dotfiles/other/.irbrc ~/.irbrc
-ln -s ~/jeanpaulsio/dotfiles/other/.pryrc ~/.pryrc
 ln -s ~/jeanpaulsio/dotfiles/.gitignore_global ~/.gitignore_global
 ```
 
