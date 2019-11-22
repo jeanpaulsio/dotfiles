@@ -53,8 +53,8 @@ let mapleader = ","
 let loaded_matchparen=1
 let html_no_rendering=1
 set noshowmatch
-set nocursorline
-set nocursorcolumn
+" set nocursorline
+" set nocursorcolumn
 set lazyredraw
 set scrolljump=8
 
@@ -143,8 +143,8 @@ Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 call plug#end()
 
 " Theme
-let g:dracula_italic = 0
-let g:dracula_colorterm = 0
+" let g:dracula_italic = 0
+" let g:dracula_colorterm = 0
 let g:airline_theme='challenger_deep'
 colorscheme challenger_deep
 
