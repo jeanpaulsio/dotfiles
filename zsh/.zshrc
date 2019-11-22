@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 export PATH="/usr/local/sbin:$PATH"
 
 # Theme
-ZSH_THEME="suvash"
+ZSH_THEME="theunraveler"
 
 # Plugins
 plugins=(git rails ruby tmux yarn asdf)
