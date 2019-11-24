@@ -3,8 +3,8 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
-set cursorline
-set cursorcolumn
+" set cursorline
+" set cursorcolumn
 set number
 set nofoldenable
 set list
