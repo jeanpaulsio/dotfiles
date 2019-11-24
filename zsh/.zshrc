@@ -16,6 +16,7 @@ export LC_ALL=en_US.UTF-8
 
 # asdf
 export ASDF_DATA_DIR=`brew --prefix asdf`/
+source $ASDF_DATA_DIR/asdf.sh
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
