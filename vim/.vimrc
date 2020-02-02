@@ -91,6 +91,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'kshenoy/vim-signature'
 Plug 'mileszs/ack.vim'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'preservim/nerdtree'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
@@ -174,3 +175,8 @@ endif
 
 cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
+
+" NERDTree
+autocmd vimenter * NERDTree
+let NERDTreeShowHidden=1
+map <C-n> :NERDTreeToggle<CR>
