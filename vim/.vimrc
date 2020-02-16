@@ -3,7 +3,7 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
-" set cursorline
+set cursorline
 " set cursorcolumn
 set number
 set nofoldenable
@@ -177,6 +177,8 @@ cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
 
 " NERDTree
-autocmd vimenter * NERDTree
 let NERDTreeShowHidden=1
 map <C-n> :NERDTreeToggle<CR>
+" Close NERDTree if it's the only window open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
