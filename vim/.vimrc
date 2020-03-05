@@ -3,8 +3,6 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
-set cursorline
-" set cursorcolumn
 set number
 set nofoldenable
 set list
@@ -25,6 +23,8 @@ let html_no_rendering=1
 set noshowmatch
 set lazyredraw
 set scrolljump=8
+" set cursorline
+" set cursorcolumn
 
 " Autoread files
 set autoread
@@ -99,6 +99,7 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'thoughtbot/vim-rspec'
 Plug 'Yggdroot/indentLine'
 
 " Languages
@@ -181,4 +182,12 @@ let NERDTreeShowHidden=1
 map <C-n> :NERDTreeToggle<CR>
 " Close NERDTree if it's the only window open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+let g:rspec_runner = "os_x_iterm2"
 
