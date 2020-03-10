@@ -71,9 +71,11 @@ function! s:VSetSearch()
   let @s = temp
 endfunction
 
-" netrw
-let g:netrw_liststyle = 3
-let g:netrw_banner = 0
+" Ignored Files
+set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*
+
+" Nerdtree config for wildignore
+let NERDTreeRespectWildIgnore=1
 
 " Plugins
 if empty(glob('~/.vim/autoload/plug.vim'))
