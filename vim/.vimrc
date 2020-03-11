@@ -4,7 +4,6 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set number
-set nofoldenable
 set list
 set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»
 set hlsearch
@@ -34,10 +33,6 @@ autocmd CursorHold * checktime
 imap jk <Esc>
 imap kj <Esc>
 
-" Move line down/up
-noremap J ddp
-noremap K ddkkp
-
 " Resizes Panes
 nmap <Up> :res -2<CR>
 nmap <Down> :res +2<CR>
@@ -59,6 +54,15 @@ nnoremap tt  :tabedit<Space>
 nnoremap tn  :tabnext<Space>
 nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
+
+" Folds
+set foldmethod=indent
+
+" Keep all folds open when a file is opened
+augroup OpenAllFoldsOnFileOpen
+  autocmd!
+  autocmd BufRead * normal zR
+augroup END
 
 " Seach for current selection when pressing *
 xnoremap * :<C-u>call <SID>VSetSearch()<CR>/<C-R>=@/<CR><CR>
