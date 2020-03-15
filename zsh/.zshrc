@@ -8,6 +8,10 @@ ZSH_THEME="theunraveler"
 # Plugins
 plugins=(git rails ruby tmux yarn)
 
+# Aliases
+alias rcedit="EDITOR=vim rails credentials:edit"
+alias rcshow="rails credentials:show"
+
 source $ZSH/oh-my-zsh.sh
 
 # ack Fix
