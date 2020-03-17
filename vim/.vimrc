@@ -90,6 +90,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
+Plug 'brooth/far.vim'
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -198,5 +199,5 @@ map <Leader>a :call RunAllSpecs()<CR>
 
 let g:rspec_runner = "os_x_iterm2"
 
-" Vim Move
-let g:move_key_modifier = 'C'
+" Vim move
+let g:move_key_modifier = 'S'
