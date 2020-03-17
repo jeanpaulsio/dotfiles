@@ -1,4 +1,4 @@
-" Base Config
+" Base config
 set smartindent
 set tabstop=2
 set shiftwidth=2
@@ -95,6 +95,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'kshenoy/vim-signature'
+Plug 'matze/vim-move'
 Plug 'mileszs/ack.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'preservim/nerdtree'
@@ -197,3 +198,5 @@ map <Leader>a :call RunAllSpecs()<CR>
 
 let g:rspec_runner = "os_x_iterm2"
 
+" Vim Move
+let g:move_key_modifier = 'C'
