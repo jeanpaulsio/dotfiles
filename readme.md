@@ -15,7 +15,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 **Brew a couple of things**
 
 ```bash
-brew install git zsh zsh-completions ack tmux asdf the_silver_searcher fzf direnv
+brew bundle
 ```
 
 **Configure git**
