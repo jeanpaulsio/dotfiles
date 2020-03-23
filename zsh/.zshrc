@@ -21,3 +21,5 @@ export LC_ALL=en_US.UTF-8
 # asdf
 autoload -Uz compinit && compinit
 . /usr/local/opt/asdf/asdf.sh
+
+eval "$(direnv hook zsh)"
