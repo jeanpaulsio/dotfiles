@@ -5,9 +5,6 @@ export PATH="/usr/local/sbin:$PATH"
 # Theme
 ZSH_THEME="theunraveler"
 
-# Plugins
-plugins=(git rails ruby tmux yarn)
-
 # Aliases
 alias rcedit="EDITOR=vim rails credentials:edit"
 alias rcshow="rails credentials:show"
@@ -22,5 +19,5 @@ export LC_ALL=en_US.UTF-8
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # asdf
-export ASDF_DATA_DIR=`brew --prefix asdf`/
-source $ASDF_DATA_DIR/asdf.sh
+autoload -Uz compinit && compinit
+. /usr/local/opt/asdf/asdf.sh
