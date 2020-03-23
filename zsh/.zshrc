@@ -8,6 +8,7 @@ ZSH_THEME="theunraveler"
 # Aliases
 alias rcedit="EDITOR=vim rails credentials:edit"
 alias rcshow="rails credentials:show"
+alias tmux='direnv exec / tmux'
 
 source $ZSH/oh-my-zsh.sh
 
