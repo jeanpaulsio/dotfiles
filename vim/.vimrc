@@ -117,13 +117,15 @@ Plug 'yuezk/vim-js'
 
 " Theme
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'ayu-theme/ayu-vim'
 call plug#end()
 
 " Theme
 let g:dracula_italic = 0
 let g:dracula_colorterm = 0
-let g:airline_theme='dracula'
-colorscheme dracula
+let g:airline_theme='ayu'
+let ayucolor="dark"
+colorscheme ayu
 
 syntax on
 set guifont=OperatorMono-Book:h16
