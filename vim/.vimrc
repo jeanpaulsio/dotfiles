@@ -124,9 +124,9 @@ call plug#end()
 " Theme
 let g:dracula_italic = 0
 let g:dracula_colorterm = 0
-let g:airline_theme='ayu'
+let g:airline_theme='dracula'
 let ayucolor="dark"
-colorscheme ayu
+colorscheme dracula
 
 syntax on
 set guifont=OperatorMono-Book:h16
