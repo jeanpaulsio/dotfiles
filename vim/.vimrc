@@ -100,6 +100,7 @@ Plug 'kshenoy/vim-signature'
 Plug 'matze/vim-move'
 Plug 'mileszs/ack.vim'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'posva/vim-vue'
 Plug 'preservim/nerdtree'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'tpope/vim-commentary'
