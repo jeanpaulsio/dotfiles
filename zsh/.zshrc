@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 export PATH="/usr/local/sbin:$PATH"
 
 # Theme
-ZSH_THEME="theunraveler"
+ZSH_THEME="sorin"
 
 # Aliases
 alias rcedit="EDITOR=vim rails credentials:edit"

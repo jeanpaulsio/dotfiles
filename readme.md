@@ -40,10 +40,16 @@ ln -s ~/github/jeanpaulsio/dotfiles/.gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 ```
 
+**Cool ass git config for shell**
+
+```bash
+git config --global --replace-all core.pager "less -F -X"
+```
+
 **Rename HostName**
 
 ```bash
-sudo scutil --set HostName westeros
+sudo scutil --set HostName jp
 ```
 
 **Change Keyspeed to make navigating Vim more chill**
