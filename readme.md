@@ -28,10 +28,10 @@ git config --global user.email "email@email.com"
 **Create symlinks**
 
 ```bash
-ln -s ~/jeanpaulsio/dotfiles/zsh/.zshrc ~/.zshrc
-ln -s ~/jeanpaulsio/dotfiles/tmux/.tmux.conf ~/.tmux.conf
-ln -s ~/jeanpaulsio/dotfiles/vim/.vimrc ~/.vimrc
-ln -s ~/jeanpaulsio/dotfiles/.gitignore_global ~/.gitignore_global
+ln -s ~/github/jeanpaulsio/dotfiles/zsh/.zshrc ~/.zshrc
+ln -s ~/github/jeanpaulsio/dotfiles/tmux/.tmux.conf ~/.tmux.conf
+ln -s ~/github/jeanpaulsio/dotfiles/vim/.vimrc ~/.vimrc
+ln -s ~/github/jeanpaulsio/dotfiles/.gitignore_global ~/.gitignore_global
 ```
 
 **Configure global .gitignore**
