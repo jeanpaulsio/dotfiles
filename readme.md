@@ -46,6 +46,12 @@ git config --global core.excludesfile ~/.gitignore_global
 git config --global --replace-all core.pager "less -F -X"
 ```
 
+**Key Repeat Stuff**
+
+```bash
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+```
+
 **Rename HostName**
 
 ```bash
