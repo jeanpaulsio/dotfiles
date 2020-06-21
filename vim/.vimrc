@@ -103,6 +103,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'posva/vim-vue'
 Plug 'preservim/nerdtree'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'rhysd/git-messenger.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
