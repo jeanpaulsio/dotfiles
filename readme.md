@@ -83,6 +83,22 @@ Shift + Command + L -> Move Right a space
 Shift + Command + H -> Move Left a space
 ```
 
+### Redis Stuff
+
+```bash
+brew install redis
+ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
+```
+
+### iTerm Stuff
+
+Merging windows
+
+```
+cmd + shift + option + grab
+```
+
 ## Useful Links
 
 - [Github access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)
