@@ -24,3 +24,6 @@ autoload -Uz compinit && compinit
 . /usr/local/opt/asdf/asdf.sh
 
 eval "$(direnv hook zsh)"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"

@@ -112,6 +112,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'thoughtbot/vim-rspec'
 Plug 'Yggdroot/indentLine'
+Plug 'rust-lang/rust.vim'
 
 " Languages
 Plug 'elixir-editors/vim-elixir'
@@ -243,3 +244,6 @@ function! DoPrettyXML()
   exe "set ft=" . l:origft
 endfunction
 command! PrettyXML call DoPrettyXML()
+
+" Rust
+let g:rustfmt_autosave = 1
