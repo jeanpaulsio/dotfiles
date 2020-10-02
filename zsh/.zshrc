@@ -23,7 +23,10 @@ export LC_ALL=en_US.UTF-8
 autoload -Uz compinit && compinit
 . /usr/local/opt/asdf/asdf.sh
 
-eval "$(direnv hook zsh)"
-
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# go
+export GOPATH=$HOME/go
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
