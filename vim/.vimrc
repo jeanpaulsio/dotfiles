@@ -170,7 +170,7 @@ endif
 let g:ale_emit_conflict_warnings = 0
 let g:ale_sign_column_always = 1
 let g:ale_fix_on_save = 1
-let g:ale_fixers = { 'javascript': ['prettier', 'eslint'], 'ruby': ['rubocop'], 'go': ['gopls'] }
+let g:ale_fixers = { 'javascript': ['prettier', 'eslint'], 'ruby': ['rubocop'] }
 
 " Prettier
 let g:jsx_ext_required = 0

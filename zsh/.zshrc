@@ -8,7 +8,8 @@ ZSH_THEME="sorin"
 # Aliases
 alias rcedit="EDITOR=vim rails credentials:edit"
 alias rcshow="rails credentials:show"
-alias tmux='direnv exec / tmux'
+alias tmux="direnv exec / tmux"
+alias letsgo="cd /Users/jp/.asdf/installs/golang/1.15/packages"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -27,5 +28,5 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # go
-# export GOPATH=$HOME/go
-# export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+export GOPATH="$HOME/.asdf/installs/golang/1.15/packages"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
