@@ -57,8 +57,6 @@ nnoremap td  :tabclose<CR>
 
 " Folds
 set foldmethod=indent
-set foldnestmax=1
-let g:go_fmt_experimental = 1
 
 " Keep all folds open when a file is opened
 augroup OpenAllFoldsOnFileOpen
