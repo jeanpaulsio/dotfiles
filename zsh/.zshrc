@@ -8,8 +8,9 @@ ZSH_THEME="sorin"
 # Aliases
 alias rcedit="EDITOR=vim rails credentials:edit"
 alias rcshow="rails credentials:show"
-alias tmux="direnv exec / tmux"
 alias letsgo="cd /Users/jp/.asdf/installs/golang/1.15/packages"
+alias main="cd /Users/jp/github/main-street/mainstreet"
+alias bigal="cd /Users/jp/github/laxcoders/bigal"
 
 source $ZSH/oh-my-zsh.sh
 

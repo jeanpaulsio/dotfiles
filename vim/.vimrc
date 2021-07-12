@@ -92,8 +92,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'brooth/far.vim'
 Plug 'dense-analysis/ale'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'janko/vim-test'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -101,28 +99,21 @@ Plug 'kshenoy/vim-signature'
 Plug 'matze/vim-move'
 Plug 'mileszs/ack.vim'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'posva/vim-vue'
 Plug 'preservim/nerdtree'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'rhysd/git-messenger.vim'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rails'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'thoughtbot/vim-rspec'
 Plug 'Yggdroot/indentLine'
-Plug 'rust-lang/rust.vim'
 
 " Languages
-Plug 'elixir-editors/vim-elixir'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'yuezk/vim-js'
 
 " Theme
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'ayu-theme/ayu-vim'
 call plug#end()
 
 " Theme
@@ -169,6 +160,7 @@ let g:ale_emit_conflict_warnings = 0
 let g:ale_sign_column_always = 1
 let g:ale_fix_on_save = 1
 let g:ale_fixers = { 'javascript': ['prettier', 'eslint'], 'ruby': ['rubocop'] }
+let g:ale_linters = { 'ruby': ['rubocop'] }
 
 " Prettier
 let g:jsx_ext_required = 0
@@ -245,6 +237,3 @@ function! DoPrettyXML()
   exe "set ft=" . l:origft
 endfunction
 command! PrettyXML call DoPrettyXML()
-
-" Rust
-let g:rustfmt_autosave = 1
